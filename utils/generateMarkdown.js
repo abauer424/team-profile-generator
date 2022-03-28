@@ -10,22 +10,22 @@ function generateMarkdown(data) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profle Generator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <header>
-    My Team
-    </header>
-
+    <nav>
+        <h1>My Team</h1>
+    </nav>
+</header>
+ 
     <body>
-    # Title: ${data.projectTitle}
 
-  
-    ## Table Of Contents
-  
-    * [Description](#description)
-  
-    ## Description
-    ${data.description}
+    <div class="col-4">
+    <div class="card">
+        <h2 class="card-header">${data.projectTitle}</span></h2>
+    </div>
 
     </body>
     </html>
@@ -35,4 +35,4 @@ function generateMarkdown(data) {
   }
   
   module.exports = generateMarkdown;
-  
+   
