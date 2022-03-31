@@ -23,17 +23,13 @@ const questions = [
         type: 'input',
         name: 'description',
         message: 'Provide a short description explaining the what, why, and how of your project.'
-    },
-    
-
+    },    
     
     ];
-    
     //Created a function to write README file
     function writeToFile(fileName, data) {
         return fs.writeFileSync(path.join(__dirname,'./dist/'+ fileName),data)
     }
-    
     
     // TODO: Create a function to initialize app
     function init() {
