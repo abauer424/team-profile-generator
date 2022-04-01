@@ -32,7 +32,7 @@ function generateMarkdown(data) {
                         </div>
                         <ul class="list-group list-group-flush bg-light">
                             <li class="list-group-item p-2  border mt-4 mx-3" id="id">ID:${data.getId}</li>
-                            <li class="list-group-item p-2 border mx-3" id="email" href="#">Email:${data.getEmail}</li>
+                            <li class="list-group-item p-2 border mx-3" id="email" href="#">Email:<mailto="${data.getEmail}"></li>
                             <li class="list-group-item p-2 border mx-3 mb-4" id="officeNum">GitHub Username:${data.getGithub}</li>
                         </ul>
                     </div>
