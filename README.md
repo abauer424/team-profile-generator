@@ -42,6 +42,6 @@ Credit to Amber Bauer, W3Schools.com, Office hours and Tutor.
 
 ## License
 
-Please view the license <a href="https://github.com/abauer424/teamm-profile-generator/blob/main/LICENSE">here.</a>
+Please view the license <a href="https://github.com/abauer424/team-profile-generator/blob/main/LICENSE">here.</a>
 
 
