@@ -6,7 +6,7 @@ For this assignment, our task was to build a Node.js command-line application th
 
 For My Awesome Team, I used Jest for running tests and Inquirer for collecting the input form the user. I made a folder directory that was easy to navigate through and store coded files. 
 
-Please view the walkthrough video <a href ="https://www.dropbox.com/sh/kv0pi1lb4uamxui/AADLit_zxCgsAOMDYrNcHRQSa?dl=0"> here. </a>
+Please view the walkthrough video <a href ="https://www.dropbox.com/s/4g6gfwwkilt6guz/Amber%20Bauer%20.mp4?dl=0"> here. </a>
 
 
 
