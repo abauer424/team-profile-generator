@@ -45,6 +45,7 @@ function mainMenu() {
 
             }
             if (answer.getRole === "Done") {
+            writeToFile("./index.html")
                 process.exit()
             }
         })
@@ -140,7 +141,7 @@ const intQuestions = [
 
 //Created a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(__dirname, './dist/' + fileName), data)
+    return fs.writeFileSync(path.join(__dirname, './dist/' + fileName),generateMarkdown(team))
 }
 
 
@@ -156,4 +157,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
