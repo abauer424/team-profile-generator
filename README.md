@@ -1,17 +1,12 @@
-# Team Profile Generator
+# My Awesome Team
 
 ## Description 
 
-For this assignment, our task was to modularize our code into multiple files and use ES6 concepts to build a README generator. For this project I used Node Package Manager to initialize the project and install/import Node.js modules. Additionally I used generate markdown in  the command line to create the README_Generator.md file. 
+For this assignment, our task was to build a Node.js command-line application that takes information about a team and compiles it into an html page that has information for each person. It was also required to do various steps throughout the coding process to make sure everything works and all of the tests pass.
 
-This problem solved creating a README file by allowing the user to answer a few questions. It transformed the process into an efficent, clean MD document.  
+For My Awesome Team, I used Jest for running tests and Inquirer for collecting the input form the user. I made a folder directory that was easy to navigate through and store coded files. 
 
-I learned and enjoyed using the integrated terminal to test my code and see what needs fixing and what works along the way. 
-
-
-My README Generator can be viewed <a href ="https://abauer424.github.io/team-profile-generator/"> here.</a> 
-
-Please view the walkthrough video <a href ="https://www.dropbox.com/s/ppz13a3bo7rpf6e/Amber-Bauer.mp4?dl=0"> here. </a>
+Please view the walkthrough video <a href ="https://www.dropbox.com/sh/kv0pi1lb4uamxui/AADLit_zxCgsAOMDYrNcHRQSa?dl=0"> here. </a>
 
 
 
@@ -25,24 +20,24 @@ Please view the walkthrough video <a href ="https://www.dropbox.com/s/ppz13a3bo7
 
 ## Installation
 
-To install the project, you need to use git clone and git pull from <a href ="https://github.com/abauer424/readme-generator">my repository.</a> After cloning its important to download NODE to your computer as well as inquirer. 
+To install the project, you need to use git clone and git pull from <a href ="https://github.com/abauer424/team-profile-generator">my repository.</a> After cloning its important to install Node, Jest & Inquirer.  
 
 
 ## Usage 
 
-When opening the repository, the user will navigate in the terminal to the develop folder by typing "cd Deveop". Once here, the user will type in the terminal "node index.js", this allows the user to create their generated README file. Once this is entered in the terminal the user will be asked a series of questions. 
-<img src="https://github.com/abauer424/readme-generator/blob/main/Develop/images/1.png" alt="image of terminal"/>
+When opening the repository, first the user will ensure all tests pass. To do this, the user will navigate into the __tests__ folder and open each test, starting with Employee.test.js. Once this is opened as shown below, the user will open a new terminal, type cd __tests__ to ensure they are in the correct folder and then type npm run test. They should see the image below will all passing tests:
+<img src="https://github.com/abauer424/team-profile-generator/blob/main/src/images/image1.png" alt="image of terminal"/>
 
-Next you will see the series of questions that display in the terminal with the text in blue. 
-<img src="https://github.com/abauer424/readme-generator/blob/main/Develop/images/2.png" alt="image of terminal"/>
+Next the user will answer the questions and see the html page be generated. To do this, the user will navigate over to the index.js file and open a new terminal. In the terminal be sure you are in the parent folder and type node index.js. The user will then be prompted with a list of questions to answer as the image shows below:
+<img src="https://github.com/abauer424/team-profile-generator/blob/main/src/images/image2.png" alt="image of terminal"/>
 
-Lastly you will see the generated README that was created as a test based on the answers the user provided in the terminal.
-<img src="https://github.com/abauer424/readme-generator/blob/main/Develop/images/2.png" alt="image of terminal"/>
+Lastly the user will see based on the data they answered in the questions, it will populate an HTML page as seen below:
+<img src="https://github.com/abauer424/team-profile-generator/blob/main/src/images/image3.png" alt="image of terminal"/>
 
 
 ## Credits
 
-Credit to Amber Bauer, W3Schools.com and Tutor.
+Credit to Amber Bauer, W3Schools.com, Office hours and Tutor.
 
 
 ## License

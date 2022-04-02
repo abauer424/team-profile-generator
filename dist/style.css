@@ -21,6 +21,8 @@
   .card-title {
     font-size: 24px;
     text-transform: capitalize;
+    margin: 0;
+    padding: 0;
   }
 
   .list-group-item {

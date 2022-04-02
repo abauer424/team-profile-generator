@@ -18,15 +18,15 @@ function generateMarkdown(data) {
     
     <header>
         <nav>
-            <h1 class="bg-danger text-center text-white py-4">My Team</h1>
+            <h1 class="bg-danger text-center text-white py-4">My Awesome Team</h1>
         </nav>
     </header>
     
     <body>
         <div class="container">
             <div class="row">
-                    ${data.map((member) =>  (
-                        `
+                    ${data.map((member) => (
+        `
                         <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
                 <div class="card-body bg-primary text-white">
@@ -34,16 +34,16 @@ function generateMarkdown(data) {
                     <p class="card-title">${member.getRole()}</p>
                 </div>
                 <ul class="list-group list-group-flush bg-light">
-                    <li class="list-group-item p-2  border mt-4 mx-3" id="id">ID:${member.getId()}</li>
-                    <li class="list-group-item p-2 border mx-3" id="email" href="#">Email:${member.getEmail()}</li>
-                    ${member.getRole()==="Intern" ? `<li class="list-group-item p-2 border mx-3 mb-4" id="school">GitHub Username:${member.getSchool()}</li>`:member.getRole()==="Engineer"?`<li class="list-group-item p-2 border mx-3 mb-4" id="gitHub">GitHub Username:${member.getGitHub()}</li>`:member.getRole()==="Manager"?`<li class="list-group-item p-2 border mx-3 mb-4" id="officeNum">GitHub Username:${member.getOfficeNum()}</li>`:`<div></div>`}
+                    <li class="list-group-item p-2  border mt-4 mx-3" id="id">ID: ${member.getId()}</li>
+                    <li class="list-group-item p-2 border mx-3" id="email" href="#">Email: ${member.getEmail()}</li>
+                    ${member.getRole() === "Intern" ? `<li class="list-group-item p-2 border mx-3 mb-4" id="school">School Name: ${member.getSchool()}</li>` : member.getRole() === "Engineer" ? `<li class="list-group-item p-2 border mx-3 mb-4" id="gitHub">GitHub Username: ${member.getGitHub()}</li>` : member.getRole() === "Manager" ? `<li class="list-group-item p-2 border mx-3 mb-4" id="officeNum">Office Number: ${member.getOfficeNum()}</li>` : `<div></div>`}
                 </ul>
             </div>
         </div> 
                         
                         `
-        
-                     ))}
+
+    ))}
                 
                 </div>
                 </div>
